@@ -37,11 +37,7 @@ PreRequisites
 ### Access and test your application by visiting http://localhost:5000.
 
 ## JSON Endpoints
-The following are open to the public:
-1. Catalog JSON: /catalog/JSON - Displays the whole catalog. Categories and all items.
-2. Categories JSON: /catalog/categories/JSON - Displays all categories
-3. Category Items JSON: /catalog/<path:category_name>/items/JSON - Displays items for a specific category
-4. Category Item JSON: /catalog/<path:category_name>/<path:item_name>/JSON - Displays a specific category item.
+The project implements a JSON endpoint that serves the same information as displayed in the HTML endpoints for an arbitrary item in the restaurnt.
 
 ## Credit and copyright: 
 Udacity for the base project code, Bootstrap for templating

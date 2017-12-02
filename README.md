@@ -5,9 +5,9 @@ This project is a RESTful web application utilizing the Flask framework which ac
 Modern web applications perform a variety of functions and provide amazing features and utilities to their users; but deep down, it’s really all just creating, reading, updating and deleting data. In this project, you’ll combine your knowledge of building dynamic websites with persistent data storage to create a web application that provides a compelling service to your users.
 
 ## What Will I Learn?
-•	Develop a RESTful web application using the Python framework Flask
-•	Implementing third-party OAuth authentication.
-•	Implementing CRUD (create, read, update and delete) operations.
+1.	Develop a RESTful web application using the Python framework Flask
+2.	Implementing third-party OAuth authentication.
+3.	Implementing CRUD (create, read, update and delete) operations.
 
 ## How to Run?
 PreRequisites

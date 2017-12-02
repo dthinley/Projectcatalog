@@ -17,9 +17,10 @@ PreRequisites
 
 ## Setup Project:
 1.	Install Vagrant and VirtualBox
-2.	Download or Clone fullstack-nanodegree-vm repository.
-3.	Find the catalog folder and replace it with the content of this current repository, by either downloading or cloning it from Here.
-
+2. Download or Clone [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm) repository.
+3. Find the catalog folder and replace it with the content of this current repository, by either downloading or cloning it from
+  [Here](https://github.com/dthinley/Projectcatalog).
+  
 ## Launch Project
 1.	Launch the Vagrant VM using command:
   $ vagrant up

@@ -11,9 +11,9 @@ Modern web applications perform a variety of functions and provide amazing featu
 
 ## How to Run?
 PreRequisites
-•	Python ~2.7
-•	Vagrant
-•	VirtualBox
+1.	Python ~2.7
+2.	Vagrant
+3.	VirtualBox
 
 ## Setup Project:
 1.	Install Vagrant and VirtualBox
@@ -23,7 +23,13 @@ PreRequisites
   
 ## Launch Project
 1.	Launch the Vagrant VM using command:
+  Go to project folder:
+  $ cd project folder
+2. Run the server up by:
   $ vagrant up
-2.	Run your application within the VM
-  $ python /vagrant/catalog/main.py
-3.	Access and test your application by visiting http://localhost:8000.
+3. Get into server:
+  $ vagrant ssh
+  cd /vagrant
+4. run with python
+  $ python project.py
+4.	Access and test your application by visiting http://localhost:5000.

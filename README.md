@@ -25,13 +25,13 @@ PreRequisites
   
 ## Launch Project
 1.	Launch the Vagrant VM using command:
-  Go to project folder:
+# Go to project folder by:
   $ cd project folder
-2. Run the server up by:
+# Run the server up by:
   $ vagrant up
-3. Get into server:
+# Get into server by:
   $ vagrant ssh
-  cd /vagrant
-4. run with python
+  $ cd /vagrant
+# run with python by:
   $ python project.py
-4.	Access and test your application by visiting http://localhost:5000.
+# Access and test your application by visiting http://localhost:5000.

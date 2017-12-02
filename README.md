@@ -37,4 +37,4 @@ PreRequisites
 ### Access and test your application by visiting http://localhost:5000.
 
 ## Credit and copyright: 
-udacity for the base project code, bootstrap for templating
+Udacity for the base project code, Bootstrap for templating

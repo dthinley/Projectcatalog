@@ -36,4 +36,5 @@ PreRequisites
   $ python project.py
 ### Access and test your application by visiting http://localhost:5000.
 
-## Credit and copyright: udacity for the base project code, bootstrap for templating
+## Credit and copyright: 
+udacity for the base project code, bootstrap for templating

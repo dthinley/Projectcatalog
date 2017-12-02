@@ -1,0 +1,35 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+<!--Feature Banner-->
+<div class="jumbotron feature">
+   <div class="container">
+      <h1><span class="glyphicon glyphicon-equalizer"></span> Edit Restaurant</h1>
+   </div>
+</div>
+</div>
+<!--Feature Banner end-->
+<div class="container">
+<div class="row">
+   <div class="col-md-6 col-md-offset-1 padding-top">
+      <h1>Edit {{restaurant.name}}</h1>
+   </div>
+</div>
+<div class="row">
+   <div class="col-md-6 col-md-offset-1 padding-top">
+      <form action="{{ url_for('editRestaurant',restaurant_id = restaurant.id)}}" method = "post">
+         <div class="form-group">
+            <label for="name">Name:</label>
+            <input type ="text" class="form-control" name="name" value="{{restaurant.name }}">
+            <div class="padding-bottom"></div>
+            <button type="submit" class="btn btn-default" id="submit" type="submit">
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Save</button>
+            <a href = '{{url_for('showRestaurants')}}'>
+            <button class="btn btn-default delete">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel</button>
+            </a>
+         </div>
+      </form>
+   </div>
+</div>
+{% endblock %}

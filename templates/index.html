@@ -1,0 +1,49 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+<!-- Banner -->
+<div class="jumbotron banner">
+   <div class="container">
+      <h1>Add Your Restaurant</h1>
+      <p>Join the thousands of other restaurants who benefit from having their menus on Restaurant directory</p>
+      <p><a class="btn btn-primary" a href="{{url_for('showLogin')}}">Join Now</a></p>
+   </div>
+</div>
+</div>
+<!-- Heading -->
+<div class="container">
+   <div class="row">
+      <div class="col-xs-12">
+         <h1 class="text-center">Welcome to Food Club</h1>
+         <p class="lead text-center">If you are restaurant owner, you can join foodClub and be known by thousand of food lovers around the world. If you are food lover, you will find hundreds of restaurnt near you with choice of your food.</p>
+      </div>
+   </div>
+</div>
+<!-- Promos -->
+<div class="container-fluid">
+   <div class="row promo">
+      <a href="#">
+         <div class="col-md-4 promo-item item-1">
+            <h3>
+               Best Choices
+            </h3>
+         </div>
+      </a>
+      <a href="#">
+         <div class="col-md-4 promo-item item-2">
+            <h3>
+               Best foods
+            </h3>
+         </div>
+      </a>
+      <a href="#">
+         <div class="col-md-4 promo-item item-3">
+            <h3>
+               Best sevices
+            </h3>
+         </div>
+      </a>
+   </div>
+</div>
+<!-- /.container-fluid -->
+{% endblock %}

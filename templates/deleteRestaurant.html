@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+<!--Feature Banner-->
+<div class="jumbotron feature">
+   <div class="container">
+      <h1><span class="glyphicon glyphicon-equalizer"></span> Delete Restaurant</h1>
+   </div>
+</div>
+</div>
+<!--Feature Banner end-->
+<div class="container">
+   <h2> Are you sure you want to delete {{restaurant.name}}? </h2>
+   <form action="{{url_for('deleteRestaurant', restaurant_id = restaurant.id)}}" method = "post" class="padding-top-10">
+      <button type="submit" class="btn btn-primary delete" id="submit" type="submit">
+      <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>Delete</button>
+      <a href = '{{url_for('showRestaurants')}}' class="btn btn-primary delete">
+      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel
+      </a>
+   </form>
+</div>
+{% endblock %}

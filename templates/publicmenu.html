@@ -1,0 +1,123 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+<!-- Banner for feature -->
+<div class="jumbotron feature">
+   <div class="container">
+      <!--Restaurant Creator-->
+      <figure class="creator">
+         <img src="{{ creator.picture}}">
+         <div>
+            <figcaption>{{ creator.name }}</figcaption>
+      </figure>
+      </h1>
+      <!--Restaurant Detail-->
+      <h2>{{ restaurant.name }}</h2>
+      <p><i class="fa fa-map-marker">{{restaurant.address}}
+      {{restaurant.city}}
+      {{restaurant.state}}
+      {{restaurant.country}}
+      {{restaurant.zipcode}}
+      </p></i>
+      </div>
+   </div>
+</div>
+</div>
+<!--Flash message-->
+<div class="row padding-top padding-bottom">
+   <div class="col-md-1"></div>
+   <div class="col-md-11 padding-none">
+   </div>
+   <div class="col-md-7"></div>
+</div>
+<div class="row">
+   <div class="col-md-12">
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      <ul>
+         {% for message in messages %}
+         <li> <strong> {{ message }} </strong> </li>
+         {% endfor %}
+      </ul>
+      {% endif %}
+      {% endwith %}
+   </div>
+</div>
+<!--Restaurant Menu List-->
+<section id="menu-list" class="section-padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 text-center marb-35">
+            <h1 class="header-h">Menu List</h1>
+            <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+               <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. 
+            </p>
+         </div>
+         <div class="col-md-12  text-center" id="menu-flters">
+            <div class="col-md-12  text-center" id="menu-flters">
+               <ul>
+                  <li>
+                  <li><a class="filter active" data-filter=".menu-restaurant">Show All</a></li>
+                  <li><a class="filter" data-filter=".entrees">Entrees</a></li>
+                  <li><a class="filter" data-filter=".appetizers">Appetizers</a></li>
+                  <li><a class="filter" data-filter=".desserts">Desserts</a></li>
+                  <li><a class="filter" data-filter=".beverages">Beverages</a></li>
+                  </li>
+               </ul>
+            </div>
+            <div id="menu-wrapper">
+               <div class="entrees menu-restaurant">
+                  <span class="clearfix">
+                  {% for i in items %}
+                  {% if i.course == 'Entree' %}
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-title">{{i.name}}</span>
+                  <span class="menu-price">${{i.price}}</span>
+                  </span>
+                  <span class="menu-subtitle">{{i.description}}</span>
+               </div>
+               {% endif %}
+               {% endfor %}
+               <div class="appetizers menu-restaurant">
+                  <span class="clearfix">
+                  {% for i in items %}
+                  {% if i.course == 'Appetizer' %}
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-title">{{i.name}}</span>
+                  <span class="menu-price">${{i.price}}</span>
+                  </span>
+                  <span class="menu-subtitle">{{i.description}}</span>
+               </div>
+               {% endif %}
+               {% endfor %}
+               <div class="desserts menu-restaurant">
+                  <span class="clearfix">     
+                  {% for i in items %}
+                  {% if i.course == 'Dessert' %}
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-title">{{i.name}}</span>
+                  <span class="menu-price">${{i.price}}</span>
+                  </span>
+                  <span class="menu-subtitle">{{i.description}}</span>
+               </div>
+               {% endif %}
+               {% endfor %}
+               <div class="beverages menu-restaurant">
+                  <span class="clearfix">
+                  {% for i in items %}
+                  {% if i.course == 'Beverage' %}
+                  <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                  <span class="menu-title">{{i.name}}</span>
+                  <span class="menu-price">${{i.price}}</span>
+                  </span>
+                  <span class="menu-subtitle">{{i.description}}</span>
+               </div>
+               {% endif %}
+               {% endfor %}
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--/ menu -->
+{% endblock %}

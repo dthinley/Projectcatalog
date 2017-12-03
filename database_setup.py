@@ -27,7 +27,8 @@ class Restaurant(Base):
     zipcode=Column(String(10), nullable=False)
     user_id = Column(Integer, ForeignKey('user.id'))
     user = relationship(User)
-
+    menu_item = relationship('MenuItem', cascade='all, delete-orphan')
+    
     @property
     def serialize(self):
         """Return object data in easily serializeable format"""

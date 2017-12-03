@@ -12,12 +12,10 @@
 <div class="container">
    <h2> Are you sure you want to delete {{restaurant.name}}? </h2>
    <form action="{{url_for('deleteRestaurant', restaurant_id = restaurant.id)}}" method = "post" class="padding-top-10">
-      <button type="submit" class="btn-primary delete" id="submit" type="submit">
+      <button type="submit" class="btn btn-primary delete" id="submit" type="submit">
       <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>Delete</button>
-      <a href = '{{url_for('showRestaurants')}}'></a>
-      <button class="btn-primary delete">
-      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel</button>
-      <a href = '{{url_for('showRestaurants')}}'>
+      <a href = '{{url_for('showRestaurants')}}' class="btn btn-primary delete">
+      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel
       </a>
    </form>
 </div>

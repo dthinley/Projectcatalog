@@ -1,7 +1,7 @@
 ## Project Overview
 This project is a RESTful web application utilizing the Flask framework which accesses a SQL database that populates categories and their items. OAuth2 provides authentication for further CRUD functionality on the application. Currently OAuth2 is implemented for Google Accounts.
 
-This project is about restaurant directory, where restaurant ower can create their restaurant account and menu. Restaurant ower can add, edit and delete their resurant and menu. Site vistors can access each resturant and their menu. They do not have access to modify or delete any contents.
+This project is about restaurant directory, where restaurant owner can create their restaurant account and menu. The restaurant owner can add, edit and delete their restaurant and menu. Site visitors can access each restaurant and their menu. They do not have access to modify or delete any contents.
 
 ## Why This Project?
 Modern web applications perform a variety of functions and provide amazing features and utilities to their users; but deep down, it’s really all just creating, reading, updating and deleting data. In this project, you’ll combine your knowledge of building dynamic websites with persistent data storage to create a web application that provides a compelling service to your users.

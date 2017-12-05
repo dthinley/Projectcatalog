@@ -18,7 +18,7 @@ PreRequisites
 3.	VirtualBox
 
 ## Setup Project:
-1.	Install Vagrant and VirtualBox
+1. Install Vagrant and VirtualBox
 2. Download or Clone [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm) repository.
 3. Find the catalog folder and replace it with the content of this current repository, by either downloading or cloning it from
   [Here](https://github.com/dthinley/Projectcatalog).
@@ -40,4 +40,4 @@ PreRequisites
 The project implements a JSON endpoint that serves the same information as displayed in the HTML endpoints for an arbitrary item in the restaurnt.
 
 ## Credit and copyright: 
-Udacity for the base project code, Bootstrap for templating
+Udacity for the base project code, Bootstrap for templating.
